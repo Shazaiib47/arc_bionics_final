@@ -26,6 +26,7 @@ body {
     text-transform: uppercase;
 }
 
+
 .main.logo-link {
     width: fit-content;
 }
@@ -74,6 +75,10 @@ body {
 
 .bg-black {
     background: black !important;
+}
+
+.bg-white {
+    background-color: #e5a607 !important;
 }
 
 .overlay {
