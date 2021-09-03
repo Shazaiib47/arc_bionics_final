@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}
+
+This is a confirmation email of your order at Arc Bionics. Your Bionics Order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Your Bionics order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We have your phone number on system as {{ order.phone_number }}.
+
+If you have any questions or queries in relation to your order, please contact us at {{ contact_email }}.
+
+Thank you for your Arc Bionics order, we can't wait to get it to you so you can experience the freedom of bionics.
+
+Sincerely,
+
+Arc Bionics
