@@ -119,16 +119,12 @@ WSGI_APPLICATION = 'arc_bionics_final.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#   'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://sgskerdalizlat:5e8ad7028ad9918a777f5c092147db2267f10953602ec14d96fce8170b31bb96@ec2-34-247-118-233.eu-west-1.compute.amazonaws.com:5432/da5ggh05l59rss')
-}
+   'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+ }
 
 
 # Password validation
