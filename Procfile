@@ -1,0 +1,1 @@
+web: gunicorn arc_bionics_final.wsgi:application
