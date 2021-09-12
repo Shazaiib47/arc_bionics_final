@@ -91,8 +91,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #e5a607;
+    color: black;
 }
 
 .text-black {
