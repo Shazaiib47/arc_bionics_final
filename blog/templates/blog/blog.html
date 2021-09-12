@@ -56,3 +56,22 @@
             </div>
         </div>
     </div>
+
+    <div>
+        {% if post_list.has_other_pages %}
+        <nav aria-label="Page navigation container">
+            <ul class="pagination justify-content-center">
+                {% if post_list.has_previous %}
+                <li>
+                    <a href="?page={{ post_list.previous_page_number }}" class="btn btn btn-black rounded-0">&laquo; Previous Page </a>
+                </li>
+                {% endif %} {% if post_list.has_next %}
+                <li>
+                    <a href="?page={{ post_list.next_page_number }}" class="btn btn btn-black rounded-0"> Next page &raquo;</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+{% endif %}
