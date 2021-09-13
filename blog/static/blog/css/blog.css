@@ -1,0 +1,9 @@
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding-top: 10.25rem;
+}
+
+#delivery-banner {
+    visibility: hidden;
+}
