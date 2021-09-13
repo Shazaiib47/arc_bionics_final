@@ -42,6 +42,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    margin: 0px;
 }
 
 .icon {
@@ -132,6 +133,7 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background-color: #e5a607;
 }
 
 .btt-link,
@@ -286,6 +288,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+
+.container.mb-2 {
+    height: calc(100vh - 164px)
+}
+
 /* Media Query Entry */
 
 /* Only for larger devices on XL Screen */
@@ -305,16 +312,9 @@ input[name='q']::placeholder {
           z-index: 1030;
       }
   
-      .header-container {
-          padding-top: 164px;
-      }
   }
 
   @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
-
       body {
           height: calc(100vh - 116px);
       }
