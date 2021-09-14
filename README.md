@@ -200,3 +200,26 @@ Wireframes for my project can be found [here](documentation/wireframes/ms4-wiref
     - When the user first logs onto the website or begins to browse, navigation is made easy thanks to the nav bar split into different sections, as well as a search bar to narrow their options. An scroll-to-top arrow has also been added for the users if they are at the bottom of the page. This will then bring them back to the top.
 
     <h2 align="left"><img src="documentation/snapshots/arcbionics-scroll.png"></h2>
+
+- "As a user I want to have the means to contact the company"
+
+    - When a user navigates the website and they have a query about a product or just a general question in regards to the company, they can navigate to the "Contact Arc" link located in the nav bar, where they will then be prompted to fill in the required fields and will then get sent towards the admin/store owner to see and respond back to.
+    This is efficient when a user has a complaint or wants to know more. This stores the email in the DB which will then notify the admin that an email has arrived.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-contact.png"></h2>
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-confirmation.png"></h2>
+
+- "As a user I would like to search for a product using the search function"
+
+    - The search function on the website is implemented in a way that whatever key word the user enters, it will return the results containing that keyword. If a user wants to search for a specific item or if it has a specific word in it, this can be done via entering that word which will then show the results.
+
+
+- "As a user I want to be able to browse each product's categories"
+
+    - Browsing different categories makes the user's experience when navigating much easier and pain free. If a user wants to look at the bionic arms category then they'd have to click on bionics in the nav bar, it will then show the dropdown and then they'd have to click bionic arms which will then display all the products within that category with ease.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-arms.png"></h2>
+
+- "As a user I want to be given the ability to edit my shopping bag"
+
+    - When a user adds a certain product to the shopping bag, a toast notification will notify them that it has been added. However when clicking onto the bag the user has the freedom to adjust the quantity of the item or size if it is a shirt. This will then update the bag and the user can proceed from then on.
