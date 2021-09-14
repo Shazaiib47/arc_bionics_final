@@ -38,8 +38,9 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'search' in request.GET:
-            query = request.GET['search']
+        if 'q' in request.GET:
+            query = request.GET['q']
+            print(query)
             if not query:
                 messages.error(request,
                                "No search criteria has been applied")
