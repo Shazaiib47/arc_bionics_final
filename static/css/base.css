@@ -289,8 +289,12 @@ input[name='q']::placeholder {
 }
 
 
-.container.mb-2 {
-    height: calc(100vh - 164px)
+.footer-styling {
+    min-height: calc(100vh - 164px)
+}
+
+.home-format {
+    margin-top: 20%;
 }
 
 /* Media Query Entry */
