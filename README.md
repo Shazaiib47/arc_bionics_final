@@ -392,6 +392,8 @@ education purposes. The images that are also used in the recipes also come from 
 
 - Student Care at [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) for providing me and helping me with my deadline due to personal issues and problems which had led me to unfortunately delay my submission.
 
+- The Tutors at CI providing me with assistance at times where I needed it most. Thank you Igor, Michael, Scott and Sheryl!
+
 - The fellow students at slack who had helped me in creating a contacts model and tips to ensure good coding practises.
 
 ## Disclaimer <a name="disclaimer"></a>
