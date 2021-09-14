@@ -223,3 +223,19 @@ Wireframes for my project can be found [here](documentation/wireframes/ms4-wiref
 - "As a user I want to be given the ability to edit my shopping bag"
 
     - When a user adds a certain product to the shopping bag, a toast notification will notify them that it has been added. However when clicking onto the bag the user has the freedom to adjust the quantity of the item or size if it is a shirt. This will then update the bag and the user can proceed from then on.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-bag.png"></h2>
+    <h2 align="center"><img src="documentation/snapshots/arcbionics-bagupdate.png"></h2>
+
+- "As a user I want to be able to checkout with ease"
+
+    - When a user adds a product of their desire to the bag and then navigates to checkout, they are greeted with the product information on one side as well as a form for them to fill out with their details such as address, name, email etc. At the bottom is a card payment field that houses card details to be entered in order for the transaction to go through. Once this occurs, a confirmation will appear after alerting the user that an confirmation email has been sent to them as well as providing the user with a summary of what they have ordered.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-checkout.png"></h2>
+    <h2 align="center"><img src="documentation/snapshots/arcbionics-orderconfirm.png"></h2>
+
+- "As a user I want to be able to see my order details and personal details"
+
+    - Upon checking out and confirming an order, once a user navigates to their profile they will see their stored personal details as well as any orders they may have placed on the other side. This is seperated into 2 to allow users to see what they want to see, as well as giving them a prompt to update their details if needs be.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-myprofile.png"></h2>
