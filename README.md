@@ -148,26 +148,55 @@ Wireframes for my project can be found [here](documentation/wireframes/ms4-wiref
 ## Frameworks, Programs, Libraries and Tools Used.
 
  1. [Google Fonts](https://fonts.google.com)
-        - Google Fonts Website was used to import the 'Spectral SC' font into the CSS file to be used within
+    - Google Fonts Website was used to import the 'Spectral SC' font into the CSS file to be used within
         the game.
-    2.  [Git](https://git-scm.com/)
-        - Git was used for version control by using the gitpod terminal to commit, add and push changes for my project to Github.
-    3.  [GitHub](https://github.com)
-        - GitHub was used to store the code from the project after it was pushed via Git.
-    4.  [Balsamiq](https://balsamiq.com/)
-        - Balsamiq was used to create the wireframes during the design and initial process.
-    5.  [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
-        - HTML Formatting tool was used to beautify and indent the HTML Code for the game.
-    6.  [CSS Formatter](https://www.freeformatter.com/css-beautifier.html)
-        - CSS Formatting tool was used to correctly indent and format the CSS within the style.css file.
-    7.  [jQuery](https://jquery.com/)
-        - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
-            This made implementing event handling, animations and manipulating much easier.
-    8.  [Heroku](https://signup.heroku.com/)
-        - Heroku was used to deploy my project onto the site to host it.
-    9.  [AWS](https://aws.amazon.com/)
-        - AWS Was used to store my static images and files onto the website through a bucket
-    10. [Gunicorn](https://gunicorn.org/)
-        - Gunicorn also helped allow me to deploy the site to heroku using a configuration
+2.  [Git](https://git-scm.com/)
+    - Git was used for version control by using the gitpod terminal to commit, add and push changes for my project to Github.
+3.  [GitHub](https://github.com)
+    - GitHub was used to store the code from the project after it was pushed via Git.
+4.  [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design and initial process.
+5.  [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+    - HTML Formatting tool was used to beautify and indent the HTML Code for the game.
+6.  [CSS Formatter](https://www.freeformatter.com/css-beautifier.html)
+    - CSS Formatting tool was used to correctly indent and format the CSS within the style.css file.
+7.  [jQuery](https://jquery.com/)
+    - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
+        This made implementing event handling, animations and manipulating much easier.
+8.  [Heroku](https://signup.heroku.com/)
+    - Heroku was used to deploy my project onto the site to host it.
+9.  [AWS](https://aws.amazon.com/)
+     - AWS Was used to store my static images and files onto the website through a bucket
+10. [Gunicorn](https://gunicorn.org/)
+    - Gunicorn also helped allow me to deploy the site to heroku using a configuration
 
 ## Testing <a name="testing"></a>
+
+4 tools were used to validate and test the integrity of my project.
+
+[W3C Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- This tool was used to validate and check the integrity of the CSS File included in my project.
+
+[W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+- This tool was used to validate the HTML Files in my project and checks for any warnings and errors.
+
+[JSHint](https://jshint.com/)
+- This tool was used to validate the JavaScript file and to scan for any errors shown throughout the website.
+
+[PEP8](http://pep8online.com/)
+- This tool was used to validate the python files in my project and check for any errors.
+
+### Testing User Stories and Site Owner stories from UX Section
+
+- "As a user I want to be able to view the products the website has to offer"
+
+    - When a user clicks onto the products page situated at the top of the nav, they will be greeted with the entire catalog of products with added filter to sort. This makes it seamless for users to be able to see what products are available as well as their details when clicked onto it.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-products.png"></h2>
+    <h2 align="right"><img src="documentation/snapshots/arcbionics-productdetail.png"></h2>
+
+- "As a user I want to be able to navigate the website with ease"
+
+    - When the user first logs onto the website or begins to browse, navigation is made easy thanks to the nav bar split into different sections, as well as a search bar to narrow their options. An scroll-to-top arrow has also been added for the users if they are at the bottom of the page. This will then bring them back to the top.
+
+    <h2 align="left"><img src="documentation/snapshots/arcbionics-scroll.png"></h2>
