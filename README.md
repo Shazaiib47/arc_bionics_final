@@ -1,104 +1,173 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Arc Bionics</h1>
 
-Welcome Shazaiib47,
+<h2 align="center"><img src="documentation/snapshots/arc-bionics-showcase.png"></h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+# Table of Contents <a name="Home"></a>
 
-## Gitpod Reminders
+1. [Project Introduction](#introduction)
+2. [UX](#ux)
+3. [Design Choices](#designchoices)
+4. [Wireframes](#wireframes)
+5. [Features](#features)
+6. [Technologies Used](#techused)
+7. [Testing](#testing)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
+11. [Disclaimer](#disclaimer)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Project Scope <a name="introduction"></a>
 
-`python3 -m http.server`
+This is my 4th and final milestone project to becoming a Full Stack Developer with the grace help of Code Institute. The project i have created here is an extension of my first
+milestone project which had the same theme. Where that had the basic framework of HTML/CSS, this is a full extension of that which houses my shown skills in Django, Python and various other technologies. The main scope for this website is centered around Bionics, Prosthetics catered for Amputees. This idea of a website had drove my passion to make this the best I can make it, as I have family members who are amputees, thus giving me the motivation to seeing this through and seeing what I could create.
 
-A blue button should appear to click: _Make Public_,
+My aim with this project was to showcase what bionics are available for amputees and to show that there are possibilities to allow them to feel normal again through their use of the bionics limbs. It also displays what kind of help is available through means of connecting with other amputees and giving them the satisfaction that it is affordable.
 
-Another blue button should appear to click: _Open Browser_.
+This application uses a full e-commerce functionality and the payments are made from Stripe. This application also contains a blog section for the store owner to illustrate to the users what they can expect from this and also to answer any questions people may have. The blog section is completely interactive allowing users to leave comments and converse. A contact model is also implemented for ease of access, allowing users to send real time emails to the store owner in which they will be alerted and will be able to see the contents of it through the admin panel.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+As certain features cannot be accessed as a normal user, I have taken the liberty to include an admin login details in the comments portion of the stage upon submitting the project.
 
-A blue button should appear to click: _Make Public_,
+## Please Read
 
-Another blue button should appear to click: _Open Browser_.
+*This project and the content involved was developed for educational purposes only. Please do not enter any real credit card information upon checkout.*
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+*Instead, please use this card number for testing purposes*
 
-To log into the Heroku toolbelt CLI:
+*Stripe Card Number: 4242 4242 4242 4242*
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+*Add any end date for the card as you please*
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+*Add any CVV number of your choice*
 
-------
+To view my live project, please click on the link below. I hope you enjoy!
 
-## Release History
+[View my Live Project Here!](https://arc-bionics-final.herokuapp.com/)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# User Experience (UX) <a name="ux"></a>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### User Stories
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+   - As a user I want to be able to view the products the website has to offer
+   - As a user I want to be able to navigate the website with ease
+   - As a user I want to have the means to contact the company
+   - As a user I would like to search for a product using the search function
+   - As a user I want to be able to browse each product's categories
+   - As a user I want to be given the ability to edit my shopping bag
+   - As a user I want to be able to checkout with ease 
+   - As a user I want to be able to see my order details and personal details
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Site Owner Stories 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+   - As a site owner, I want to be able to edit, add and delete products
+   - As a site owner, I want to customers to have a pain free browsing experience
+   - As a site owner, I want the website to be completely responsive
+   - As a site owner, I want to be able to view the admin panel to make necessary changes
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Design Choices <a name="designchoices"></a>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Font Selection & Theme
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+   Due to this project being an extension of my MS1 and having close links and keeping the design scheme the same, I had used the same font that was present in my first project and had carried it over to this to maintain the theme.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+   The font I had chosen in the end was [Lato](https://fonts.google.com/specimen/Lato)
+    
+    
+<h2 align="left"><img src="documentation/snapshots/arc-bionics-ms1.png"></h2>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<h2 align="right"><img src="documentation/snapshots/arc-bionics-ms4.png"></h2>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+As shown above, the font is clearly the same just with added bold effects. This is also a good time to actually notice the similarity in themes from my first project to my latest. Both keep their respective themes and I feel like as a site owner, I should have the ability to maintain the design scheme throughout to ensure it is consistent so returning users can also navigate their way around upon browsing the website.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Color Choices
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+When considering the colour theme for my website in the pre planning phase, I had already knew I was going to use the same colour palette from my first project as i wanted to maintain the theme and the design of the website so it is consistent overall and across all pages.
 
-------
+The images and the colour of the text as well as the colours used contrasted well and worked well together and there were no hard to see elements when taking the colour into account
 
-## FAQ about the uptime script
+<h2 align="center"><img src="documentation/snapshots/arc-bionics-color-scheme.png"></h2>
 
-**Why have you added this script?**
+## Wireframes <a name="wireframes"></a>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Wireframes for this project were developed and planned in [Balsamiq](https://balsamiq.com).
+There are no huge marginal changes when comparing them to the live website. Both the live and the wireframes feature the same design respectively whilst keeping the original scope in mind. There are no massive changes that affect the usability of the website.
 
-**How will this affect me?**
+Wireframes for my project can be found [here](documentation/wireframes/ms4-wireframes1.pdf)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Features <a name="features"></a>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- A e-commerce website with full usability to search products through categories and tags.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- Responsive on desktop as well as for handheld devices when on the go.
 
-**So….?**
+- A dedicated admin panel product management page to alter products and to also add new products
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- A complete working interactive search function to narrow down products as well as sorting from price, name and category ascending order.
 
-**Can I opt out?**
+- Full CRUD Functionality implemented.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- A complete working blog with ability to add comments as users with a moderated view.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- A contacts model to get in touch directly with the store owner.
 
-**Anything more?**
+## Future Features to Implement
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- A wishlist model to allow users to add products to their wishlist if they wish to purchase at a later date
 
----
+- A reviews model to allow users to leave reviews for their favourite products
 
-Happy coding!
+- A view to allow users to navigate from the first project through this one so they know where it all started.
+
+## Technologies Used <a name="techused"></a>
+
+### Languages Used
+
+- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5).
+    - Used within the website as the main programming language to implement the text and the structure.
+
+ - [CSS 3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - Used to style the elements and variables contained within the website, mainly the cards, font, colour as well as
+        added animations and transitions.
+    
+ - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - Used JS to implement the code to bring the webite together through functions used in animations, overlay and to make the site interactive.
+    
+ - [Python](https://www.python.org/)
+    - Python programming was used to allow me to integrate the systems together seamlessly.
+
+ - [Django](https://www.djangoproject.com/)
+    - Django programming that was used to create the project
+
+ - [Django Countries](https://pypi.org/project/django-countries/)
+    - Django Countries was used to allow users to select countries in the checkout/order form.
+
+ - [Django-Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+    - Django Allauth was used to create and implement the sign in and register functionality for my project.
+
+
+## Frameworks, Programs, Libraries and Tools Used.
+
+ 1. [Google Fonts](https://fonts.google.com)
+        - Google Fonts Website was used to import the 'Spectral SC' font into the CSS file to be used within
+        the game.
+    2.  [Git](https://git-scm.com/)
+        - Git was used for version control by using the gitpod terminal to commit, add and push changes for my project to Github.
+    3.  [GitHub](https://github.com)
+        - GitHub was used to store the code from the project after it was pushed via Git.
+    4.  [Balsamiq](https://balsamiq.com/)
+        - Balsamiq was used to create the wireframes during the design and initial process.
+    5.  [HTML Formatter](https://www.freeformatter.com/html-formatter.html)
+        - HTML Formatting tool was used to beautify and indent the HTML Code for the game.
+    6.  [CSS Formatter](https://www.freeformatter.com/css-beautifier.html)
+        - CSS Formatting tool was used to correctly indent and format the CSS within the style.css file.
+    7.  [jQuery](https://jquery.com/)
+        - jQuery library was used to make HTML and the JS much easier to use and implement via their API.
+            This made implementing event handling, animations and manipulating much easier.
+    8.  [Heroku](https://signup.heroku.com/)
+        - Heroku was used to deploy my project onto the site to host it.
+    9.  [AWS](https://aws.amazon.com/)
+        - AWS Was used to store my static images and files onto the website through a bucket
+    10. [Gunicorn](https://gunicorn.org/)
+        - Gunicorn also helped allow me to deploy the site to heroku using a configuration
+
+## Testing <a name="testing"></a>
