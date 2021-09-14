@@ -12,7 +12,7 @@ def index(request):
 
 
 def contact(request):
-    """This will return the contact page 
+    """This will return the contact page
     and sends the contact form info to the database"""
     if request.method == "POST":
         form = ContactForm(request.POST)
@@ -22,15 +22,17 @@ def contact(request):
             form.email = request.POST['email'],
             form.save()
             user_email = ''.join(form.email)
-            messages.success(request, f"Thanks {user_email}, Your query has been sent.\
-                                        Arc Bionics will be in touch with you.")
+            messages.success(request,
+                             f"Thanks {user_email}, Your query has been sent.\
+                             Arc Bionics will be in touch with you.")
             return redirect('home')
         else:
-            messages.error(request,'Error: Something has gone wrong, try again later')
+            messages.error(request,
+                           'Error: Something has gone wrong, try again later')
             return redirect('home')
     else:
         form = ContactForm()
-  
+
     template = 'home/contact_page.html'
     context = {
         'form': form,
