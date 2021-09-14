@@ -123,8 +123,10 @@
     {% endif %}
     {% block page_header %}
     {% endblock %}
+    <div class="footer-styling">
     {% block content %}
     {% endblock %}
+    </div>
     {% block postloadjs %}
     <script>
       $('.toast').toast('show');
