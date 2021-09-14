@@ -8,7 +8,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -39,15 +38,18 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
+        if 'search' in request.GET:
+            query = request.GET['search']
             if not query:
-                messages.error(request, "No search criteria has been applied")
+                messages.error(request,
+                               "No search criteria has been applied")
                 return redirect(reverse('products'))
-           
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(
+                        name__icontains=query) | Q(
+                        description__icontains=query)
             products = products.filter(queries)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -76,7 +78,8 @@ def product_detail(request, product_id):
 def add_product(request):
     """This adds a product to the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only Arc Bionics Personnel can do that.')
+        messages.error(request,
+                       'Sorry, only Arc Bionics Personnel can do that.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -86,10 +89,12 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add product. \
+                            Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -102,7 +107,9 @@ def add_product(request):
 def edit_product(request, product_id):
     """Edits a product in the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only Arc Bionics Personnel can do that.')
+        messages.error(request,
+                       'Sorry, only Arc Bionics \
+                        Personnel can do that.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -113,7 +120,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Product Successfully Updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to Update the Product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to Update the Product. \
+                                     Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are currently editing {product.name}')
@@ -131,7 +139,8 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """This deletes a product from the store"""
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only Arc Bionics Personnel can do that.')
+        messages.error(request, 'Sorry, only Arc Bionics \
+                                 Personnel can do that.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
